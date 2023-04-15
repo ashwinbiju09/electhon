@@ -7,10 +7,13 @@ import Quiz from "./Quiz";
 import Report from "./Report";
 import Results from "./Results";
 import Slip from "./Slip";
-import Login from "./Login";
+// import Login from "./Login";
+import LoginPage from "./Login";
 import SignUp from "./SignUp";
 
 import { Route, Routes } from "react-router-dom";
+import OTPPage from "./otp";
+import Election from "./election";
 
 const Base = () => {
   return (
@@ -24,8 +27,10 @@ const Base = () => {
         <Route path="/report" element={<Report />} />
         <Route path="/results" element={<Results />} />
         <Route path="/slip" element={<Slip />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/otp" element={<OTPPage />} />
+        <Route path="/election" element={<Election />} />
       </Routes>
     </div>
   );

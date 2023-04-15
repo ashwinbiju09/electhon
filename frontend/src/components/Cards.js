@@ -27,7 +27,7 @@ const Cards = () => {
                 ></lord-icon>
                 <div class="">
                   <h3 class="text-lg font-bold text-gray-900 sm:text-xl">
-                    Voter Registration
+                    VR
                   </h3>
                 </div>
               </a>
@@ -49,7 +49,7 @@ const Cards = () => {
                 ></lord-icon>
                 <div class="">
                   <h3 class="text-lg font-bold text-gray-900 sm:text-xl">
-                    Changes in Voter ID
+                    VID
                   </h3>
                 </div>
               </a>
@@ -71,7 +71,7 @@ const Cards = () => {
                 ></lord-icon>
                 <div class="">
                   <h3 class="text-lg font-bold text-gray-900 sm:text-xl">
-                    Shift Constituency
+                    SC
                   </h3>
                 </div>
               </a>
@@ -93,7 +93,7 @@ const Cards = () => {
                 ></lord-icon>
                 <div class="">
                   <h3 class="text-lg font-bold text-gray-900 sm:text-xl">
-                    Candidate Info
+                    CI
                   </h3>
                 </div>
               </a>
@@ -115,7 +115,7 @@ const Cards = () => {
                 ></lord-icon>
                 <div class="">
                   <h3 class="text-lg font-bold text-gray-900 sm:text-xl">
-                    Election Results & Updates
+                    ERU
                   </h3>
                 </div>
               </a>
@@ -137,7 +137,7 @@ const Cards = () => {
                 ></lord-icon>
                 <div class="">
                   <h3 class="text-lg font-bold text-gray-900 sm:text-xl">
-                    Directions to Polling Booth
+                    DPB
                   </h3>
                 </div>
               </a>
@@ -159,7 +159,7 @@ const Cards = () => {
                 ></lord-icon>
                 <div class="">
                   <h3 class="text-lg font-bold text-gray-900 sm:text-xl">
-                    EVM Simulation
+                    Sim
                   </h3>
                 </div>
               </a>
@@ -181,7 +181,7 @@ const Cards = () => {
                 ></lord-icon>
                 <div class="">
                   <h3 class="text-lg font-bold text-gray-900 sm:text-xl">
-                    Digital Photo Voter Slip
+                    DVS
                   </h3>
                 </div>
               </a>
