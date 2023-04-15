@@ -7,6 +7,11 @@ import Login from "./Login";
 import { Route, Routes } from "react-router-dom";
 import OTPPage from "./otp";
 import Election from "./election";
+import Campaign from "./campaign";
+import Success from "../components/campaign/success";
+import AdminLog from "./adminlog";
+import Dashboard from "../components/admin/dashboard";
+import InstitutionList from "../components/admin/list";
 
 const Base = () => {
   return (
@@ -19,6 +24,11 @@ const Base = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/otp" element={<OTPPage />} />
         <Route path="/election" element={<Election />} />
+        <Route path="/campaign" element={<Campaign />} />
+        <Route path="/success" element={<Success />} />
+        <Route path="/adminlog" element={<AdminLog />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/list" element={<InstitutionList />} />
       </Routes>
     </div>
   );

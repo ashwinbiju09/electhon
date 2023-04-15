@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "react-easy-swipe": "^0.0.23",
+    "react-icons": "^4.8.0"
+  }
+}

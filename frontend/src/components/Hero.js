@@ -24,12 +24,11 @@ const Hero = () => {
                 to="/register"
                 class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
               >
-                Join Today
+                Join as Institution
               </div>
             </div>
             <div class="w-46 mt-7 mb-10">
               <img
-                src=""
                 alt=""
                 class="w-full md:w-3/4 z-50  ml-0 object-center"
                 style={{
