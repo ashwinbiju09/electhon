@@ -86,7 +86,8 @@ const Cards = () => {
             <div>
               <a
                 class="block text-center rounded-xl bg-white md:p-3 sm:p-6"
-                href=""
+                href="https://affidavit.eci.gov.in/"
+                target="_blank"
               >
                 <lord-icon
                   src="https://cdn.lordicon.com/yyecauzv.json"
@@ -130,7 +131,8 @@ const Cards = () => {
             <div>
               <a
                 class="block text-center rounded-xl bg-white md:p-3 sm:p-6"
-                href=""
+                target="_blank"
+                href="http://maps.google.com/maps?z=12&t=m&q=loc:38.9419+-78.3020"
               >
                 <lord-icon
                   src="https://cdn.lordicon.com/zzcjjxew.json"

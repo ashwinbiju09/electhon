@@ -6,9 +6,6 @@ import EVM from "./EVM";
 import Quiz from "./Quiz";
 import Report from "./Report";
 import Results from "./Results";
-import Slip from "./Slip";
-import Login from "./Login";
-import SignUp from "./SignUp";
 
 import { Route, Routes } from "react-router-dom";
 
@@ -23,9 +20,6 @@ const Base = () => {
         <Route path="/quiz" element={<Quiz />} />
         <Route path="/report" element={<Report />} />
         <Route path="/results" element={<Results />} />
-        <Route path="/slip" element={<Slip />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<SignUp />} />
       </Routes>
     </div>
   );

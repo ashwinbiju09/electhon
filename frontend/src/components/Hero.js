@@ -28,6 +28,7 @@ const Hero = () => {
             </div>
             <div class="w-46 mt-7 mb-10">
               <img
+                src=""
                 alt=""
                 class="w-full md:w-3/4 z-50  ml-0 object-center"
                 style={{
