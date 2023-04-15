@@ -30,7 +30,7 @@ const Features = () => {
               </div>
               <div class="text-center m-auto mt-2 w-full h-16">
                 <a
-                  href=""
+                  href="/campaign"
                   class="text-gray-500 font-bold lg:text-sm hover:text-gray-900"
                 >
                   Know More
@@ -57,7 +57,7 @@ const Features = () => {
               </div>
               <div class="text-center m-auto mt-2 w-full h-16">
                 <a
-                  href="https://www.w3schools.com/cssref/tryit.php?filename=trycss_border-left-color"
+                  href="/poster"
                   class="text-gray-500 font-bold lg:text-sm hover:text-gray-900"
                   target="_blank"
                 >
@@ -84,9 +84,13 @@ const Features = () => {
                 </p>
               </div>
               <div class="text-center m-auto mt-2 w-full h-16">
-                <button class="text-gray-500 font-bold lg:text-sm hover:text-gray-900">
+                <a
+                  href="/referral"
+                  class="text-gray-500 font-bold lg:text-sm hover:text-gray-900"
+                  target="_blank"
+                >
                   Know More
-                </button>
+                </a>
               </div>
             </div>
           </div>

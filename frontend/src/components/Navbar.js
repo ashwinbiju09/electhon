@@ -8,6 +8,9 @@ const Navbar = (props) => {
         <a class="text-3xl" href="/">
           <img class="h-12 ml-4" alt="logo" src="/assets/logo.png" />
         </a>
+        <div class="text-2xl ml-2 font-poppins font-medium text-white">
+          Democratic desk
+        </div>
         <a
           class="body-font font-poppins inline-block ml-auto mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-200 text-sm text-gray-900 font-bold rounded-xl transition duration-200"
           href="/login"

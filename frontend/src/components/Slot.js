@@ -42,7 +42,11 @@ const Slot = () => {
                   more (approx).
                 </p>
               </div>
-              <button>Save changes</button>
+              <div class="flex justify-center my-2 ">
+                <button class=" bg-blue-500 hover:bg-blue-700 text-white w-42 font-bold py-2 px-4 rounded-full">
+                  Click to book your slot
+                </button>
+              </div>
             </div>
           </div>
         </div>
