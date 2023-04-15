@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Cards from "../components/Cards";
+import Footer from "../components/Footer";
+import Features from "../components/Features";
 
 const Landing = () => {
   return (
@@ -9,6 +11,8 @@ const Landing = () => {
       <Navbar />
       <Hero />
       <Cards />
+      <Features />
+      <Footer />
     </div>
   );
 };
