@@ -12,6 +12,8 @@ import Success from "../components/campaign/success";
 import AdminLog from "./adminlog";
 import Dashboard from "../components/admin/dashboard";
 import InstitutionList from "../components/admin/list";
+import Poster from "./Poster";
+import Referral from "./Referral";
 
 const Base = () => {
   return (
@@ -29,6 +31,8 @@ const Base = () => {
         <Route path="/adminlog" element={<AdminLog />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/list" element={<InstitutionList />} />
+        <Route path="/poster" element={<Poster />} />
+        <Route path="/referral" element={<Referral />} />
       </Routes>
     </div>
   );
