@@ -5,18 +5,19 @@ const Hero = () => {
   return (
     <div>
       <div class="mb-10">
-        <div class="px-24 bg-blue-800">
-          <div class="h-20">{/* <Particle /> */}</div>
+        <div class="px-28 pt-6 bg-blue-800">
+          {/* <div>
+            <Particle />
+          </div> */}
           <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center justify-between flex-end">
             <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-              <p class="text-3xl tracking-loose w-full text-gray-100 font-bold rounded-full tracking-wider">
-                Lorem Ipsum
+              <p class="text-3xl tracking-loose w-full italic text-gray-100 font-bold rounded-full tracking-wider">
+                Hello , voters !
               </p>
-              <h1 class="my-4 text-5xl font-bold leading-tight sm:mx-auto ">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
+              <h1 class="my-4 text-gray-100 text-5xl font-bold leading-tight sm:mx-auto ">
+                Utilise our platform to create one strong Nation
               </h1>
-              <p class="leading-normal text-2xl tracking-loose w-full">
+              <p class="leading-normal text-gray-100 text-2xl tracking-loose w-full">
                 Vote today to create a better future !
               </p>
               <div
@@ -36,7 +37,7 @@ const Hero = () => {
                   justifyContent: "center",
                   alignItems: "center",
                 }}
-                src="/assets/hero.png"
+                src="/assets/Hero.png"
               />
             </div>
           </div>

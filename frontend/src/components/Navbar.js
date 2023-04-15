@@ -1,6 +1,7 @@
 import React from "react";
+import Slot from "./Slot";
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <div>
       <nav class="relative px-4 py-4 flex justify-between items-center bg-blue-800">
@@ -9,13 +10,13 @@ const Navbar = () => {
         </a>
         <a
           class="body-font font-poppins inline-block ml-auto mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-200 text-sm text-gray-900 font-bold rounded-xl transition duration-200"
-          href="#"
+          href="/login"
         >
-          Sign In
+          Login
         </a>
       </nav>
+      {props.slot && <Slot />}
     </div>
   );
 };
-
 export default Navbar;

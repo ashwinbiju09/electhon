@@ -8,7 +8,7 @@ import Features from "../components/Features";
 const Landing = () => {
   return (
     <div>
-      <Navbar />
+      <Navbar slot={true} />
       <Hero />
       <Cards />
       <Features />
