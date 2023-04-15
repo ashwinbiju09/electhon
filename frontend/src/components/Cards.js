@@ -3,12 +3,13 @@ import React from "react";
 const Cards = () => {
   return (
     <div>
-      <h1 class="mt-5 mb-5 text-center font-bold py-10 text-3xl italic">
+      <h1 class="mt-2 mb-5 text-center font-bold py-10 text-3xl italic">
         Your vote is your voice.
         <span className="ml-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-800 to-blue-300">
           Use it !
         </span>
       </h1>
+
       <div class="flex justify-center">
         <div class="mt-2 mx-10 grid md:grid-rows-2 md:grid-flow-col md:gap-10 sm:grid-rows-1 sm:grid-flow-row sm:gap-0">
           {/* Card 1*/}
@@ -16,7 +17,8 @@ const Cards = () => {
             <div>
               <a
                 class="block text-center rounded-xl bg-white md:p-3 sm:p-6"
-                href=""
+                target="_blank"
+                href="https://voterportal.eci.gov.in/"
               >
                 <lord-icon
                   src="https://cdn.lordicon.com/jpikaoyw.json"
@@ -38,7 +40,8 @@ const Cards = () => {
             <div>
               <a
                 class="block text-center rounded-xl bg-white md:p-3 sm:p-6"
-                href=""
+                target="_blank"
+                href="https://voterportal.eci.gov.in/"
               >
                 <lord-icon
                   src="https://cdn.lordicon.com/puvaffet.json"
@@ -60,7 +63,8 @@ const Cards = () => {
             <div>
               <a
                 class="block text-center rounded-xl bg-white md:p-3 sm:p-6"
-                href=""
+                target="_blank"
+                href="https://voterportal.eci.gov.in/"
               >
                 <lord-icon
                   src="https://cdn.lordicon.com/rhvddzym.json"
