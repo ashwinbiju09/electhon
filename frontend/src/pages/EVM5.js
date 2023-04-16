@@ -13,8 +13,16 @@ const EVM5 = () => {
             Congratulations !
           </span>
         </h1>
+        <img class="mx-auto" src="/assets/5.png" alt="Workplace" width={1000} />
       </div>
-      <img class="mx-auto" src="/assets/5.png" alt="Workplace" width={1000} />
+      <div class="flex justify-center mb-5">
+        <a
+          class="body-font font-poppins inline-block py-2 px-6 bg-blue-50 hover:bg-blue-200 text-sm text-gray-900 font-bold rounded-xl transition duration-200"
+          href="/simulation"
+        >
+          Reset
+        </a>
+      </div>
       <Footer />
     </div>
   );

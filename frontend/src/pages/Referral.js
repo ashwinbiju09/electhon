@@ -53,10 +53,10 @@ const Referral = () => {
                         Name
                       </th>
                       <th scope="col" class="px-6 py-4">
-                        Design Name
+                        No.of Referral
                       </th>
                       <th scope="col" class="px-6 py-4">
-                        No.of downloads
+                        No.of Votes
                       </th>
                     </tr>
                   </thead>
@@ -64,41 +64,33 @@ const Referral = () => {
                     <tr class="border-b transition duration-300 ease-in-out hover:bg-blue-200 ">
                       <td class="whitespace-nowrap px-6 py-4 font-medium">1</td>
                       <td class="whitespace-nowrap px-6 py-4">Aswathy</td>
-                      <td class="whitespace-nowrap px-6 py-4">Let's Vote</td>
-                      <td class="whitespace-nowrap px-6 py-4">1249</td>
+                      <td class="whitespace-nowrap px-6 py-4">76</td>
+                      <td class="whitespace-nowrap px-6 py-4">49</td>
                     </tr>
                     <tr class="border-b transition duration-300 ease-in-out hover:bg-blue-200 ">
                       <td class="whitespace-nowrap px-6 py-4 font-medium">2</td>
                       <td class="whitespace-nowrap px-6 py-4">Guru</td>
 
-                      <td class="whitespace-nowrap px-6 py-4">
-                        Make a change !
-                      </td>
-                      <td class="whitespace-nowrap px-6 py-4">1099</td>
+                      <td class="whitespace-nowrap px-6 py-4">43</td>
+                      <td class="whitespace-nowrap px-6 py-4">19</td>
                     </tr>
                     <tr class="border-b transition duration-300 ease-in-out hover:bg-blue-200 ">
                       <td class="whitespace-nowrap px-6 py-4 font-medium">3</td>
                       <td class="whitespace-nowrap px-6 py-4">Barath</td>
-                      <td class="whitespace-nowrap px-6 py-4">
-                        Democratic Responsibility
-                      </td>
-                      <td class="whitespace-nowrap px-6 py-4">850</td>
+                      <td class="whitespace-nowrap px-6 py-4">40</td>
+                      <td class="whitespace-nowrap px-6 py-4">15</td>
                     </tr>
                     <tr class="border-b transition duration-300 ease-in-out hover:bg-blue-200 ">
                       <td class="whitespace-nowrap px-6 py-4 font-medium">4</td>
                       <td class="whitespace-nowrap px-6 py-4">Siddharth</td>
-                      <td class="whitespace-nowrap px-6 py-4">
-                        Vote for change
-                      </td>
-                      <td class="whitespace-nowrap px-6 py-4">649</td>
+                      <td class="whitespace-nowrap px-6 py-4">25</td>
+                      <td class="whitespace-nowrap px-6 py-4">9</td>
                     </tr>
                     <tr class="border-b transition duration-300 ease-in-out hover:bg-blue-200 ">
                       <td class="whitespace-nowrap px-6 py-4 font-medium">5</td>
                       <td class="whitespace-nowrap px-6 py-4">Dharshana</td>
-                      <td class="whitespace-nowrap px-6 py-4">
-                        Cast your vote
-                      </td>
-                      <td class="whitespace-nowrap px-6 py-4">499</td>
+                      <td class="whitespace-nowrap px-6 py-4">19</td>
+                      <td class="whitespace-nowrap px-6 py-4">4</td>
                     </tr>
                   </tbody>
                 </table>
