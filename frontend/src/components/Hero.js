@@ -6,18 +6,18 @@ const Hero = () => {
     <div>
       <div class="mb-10">
         <div class="px-28 pt-6 bg-blue-800">
-          <div class="-z-1 pointer-events-none">
+          {/* <div class="-z-1 pointer-events-none">
             <Particle />
-          </div>
+          </div> */}
           <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center justify-between flex-end">
             <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
               <p class="text-3xl tracking-loose w-full italic text-gray-100 font-bold rounded-full tracking-wider">
                 Hello , voters !
               </p>
-              <h1 class="my-4 text-gray-100 text-5xl font-bold leading-tight sm:mx-auto ">
+              <h1 class="my-4 text-gray-100 md:text-5xl sm:text-3xl font-bold leading-tight ">
                 Utilise our platform to create one strong Nation
               </h1>
-              <p class="leading-normal text-gray-100 text-2xl tracking-loose w-full">
+              <p class="leading-normal text-gray-100 md:text-2xl tracking-loose w-full">
                 Vote today to create a better future !
               </p>
               <div

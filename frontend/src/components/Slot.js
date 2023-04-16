@@ -8,7 +8,7 @@ const Slot = () => {
   };
   return (
     <div>
-      <div className="grid content-center font-poppins font-lg font-bold tracking-widest w-full h-12 text-center bg-white bg-gradient-to-r from-orange-600 to-blue-700 bg-clip-text animate-text text-transparent animate-pulse">
+      <div className="grid m-2 md:m-0 content-center font-poppins font-lg font-bold tracking-widest w-full h-12 text-center bg-white bg-gradient-to-r from-orange-600 to-blue-700 bg-clip-text animate-text text-transparent animate-pulse">
         <button onClick={handleButtonClick}>
           Check the average wait time at your polling station and schedule your
           time slot!

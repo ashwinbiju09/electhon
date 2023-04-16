@@ -8,7 +8,7 @@ const Navbar = (props) => {
         <a class="text-3xl" href="/">
           <img class="h-12 ml-4" alt="logo" src="/assets/logo.png" />
         </a>
-        <div class="text-2xl ml-2 font-poppins font-semibold text-white">
+        <div class="md:text-2xl sm:text-xl ml-2 font-poppins font-semibold text-white">
           Democratic desk
         </div>
         <a

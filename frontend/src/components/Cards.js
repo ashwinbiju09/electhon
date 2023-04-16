@@ -5,9 +5,9 @@ const Cards = () => {
     <div>
       <div class="z-50">
         <h1 class="text-center font-bold py-3 text-3xl italic">
-          Your vote is your voice.
+          General
           <span className="ml-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-800 to-blue-300">
-            Use it !
+            Services
           </span>
         </h1>
 
