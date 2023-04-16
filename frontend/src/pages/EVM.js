@@ -26,9 +26,34 @@ const EVM = () => {
           shape="rect"
           coords="290,172,333,250"
           alt="Phone"
-          href="/output"
+          href="/output1"
+        />
+        <area
+          shape="rect"
+          coords="290,252,353,290"
+          alt="Phone"
+          href="/output2"
+        />
+        <area
+          shape="rect"
+          coords="290,292,393,320"
+          alt="Phone"
+          href="/output3"
+        />
+        <area
+          shape="rect"
+          coords="290,352,433,380"
+          alt="Phone"
+          href="/output4"
+        />
+        <area
+          shape="rect"
+          coords="290,392,483,430"
+          alt="Phone"
+          href="/output5"
         />
       </map>
+
       <Footer />
     </div>
   );
