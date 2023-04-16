@@ -3,10 +3,16 @@ import React from "react";
 const Cards = () => {
   return (
     <div>
-      <h1 class="mt-2 mb-5 text-center font-bold py-10 text-3xl italic">
+      {/* <h1 class="mt-2 mb-5 text-center font-bold py-10 text-3xl italic">
         Your vote is your voice.
         <span className="ml-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-800 to-blue-300">
           Use it !
+        </span>
+      </h1> */}
+      <h1 class="mt-2 mb-5 text-center font-bold py-10 text-3xl italic">
+        One - stop -
+        <span className="ml-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-800 to-blue-300">
+          solution !
         </span>
       </h1>
 
