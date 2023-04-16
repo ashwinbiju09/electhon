@@ -18,7 +18,7 @@ const Features = () => {
       <div class="flex justify-center bg-blue-800">
         <div class="grid md:grid-rows-1 md:grid-flow-col md:gap-10 sm:grid-rows-1 sm:grid-flow-row sm:gap-0">
           {/* Card 1 */}
-          <div class="w-80 mt-24 m-auto lg:mt-16 max-w-sm">
+          <div class="w-80 mt-24 m-auto lg:mt-16 max-w-sm z-50">
             <img
               src="https://image.freepik.com/free-vector/app-development-illustration_52683-47931.jpg"
               alt=""
@@ -32,7 +32,7 @@ const Features = () => {
                 <p class="text-center text-gray-500 pt-5">
                   Foster civic responsibility and encourage voter participation
                   by organizing Voter ID registration drives in educational
-                  institutions
+                  institutions.
                 </p>
               </div>
               <div class="text-center m-auto mt-2 w-full h-16">
@@ -46,7 +46,7 @@ const Features = () => {
             </div>
           </div>
           {/* Card 2 */}
-          <div class="w-80 my-12 m-auto lg:mt-16 max-w-sm">
+          <div class="w-80 my-12 m-auto lg:mt-16 max-w-sm z-50">
             <img
               src="https://image.freepik.com/free-vector/app-development-illustration_52683-47931.jpg"
               alt=""
@@ -59,7 +59,7 @@ const Features = () => {
               <div class="w-5/6 m-auto">
                 <p class="text-center text-gray-500 pt-5">
                   Join the movement to increase voter turnout by showcasing your
-                  creative talent in the poster making challenge
+                  creative talent in the poster making challenge.
                 </p>
               </div>
               <div class="text-center m-auto mt-2 w-full h-16">
@@ -74,7 +74,7 @@ const Features = () => {
             </div>
           </div>
           {/* Card 3 */}
-          <div class="w-80 my-12 m-auto lg:mt-16 max-w-sm">
+          <div class="w-80 my-12 m-auto lg:mt-16 max-w-sm z-50">
             <img
               src="https://image.freepik.com/free-vector/app-development-illustration_52683-47931.jpg"
               alt=""
@@ -87,7 +87,7 @@ const Features = () => {
               <div class="w-5/6 m-auto">
                 <p class="text-center text-gray-500 pt-5">
                   Share the power of democracy by inviting friends to download
-                  the election application using your referral link
+                  the election application using your referral link.
                 </p>
               </div>
               <div class="text-center m-auto mt-2 w-full h-16">
