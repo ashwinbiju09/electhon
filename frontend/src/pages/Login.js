@@ -1,14 +1,29 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { toast } from "react-toastify";
 import auth from "../utils/auth";
+import RouteHelper from "../utils/routeHelper";
+import { useLocation } from "react-router-dom";
 
 const Login = () => {
   const [isOtpSent, setOtpSent] = useState(false);
 
   const [voterId, setVoterId] = useState("");
   const [otp, setOtp] = useState("");
+
+  const search = useLocation().search;
+  const intended = new URLSearchParams(search).get("intended");
+
+  useEffect(() => {
+    auth()
+      .fetchUser()
+      .then((response) => {
+        if (response.isAuth) {
+          RouteHelper.redirect("/");
+        }
+      });
+  }, []);
 
   function handleLogin() {
     toast.promise(
@@ -60,7 +75,7 @@ const Login = () => {
         },
         success: {
           render({ data }) {
-            auth().setToken(data.data);
+            auth().setToken(data.data, intended ?? "/");
             return "OTP verified successfully";
           },
         },

@@ -110,7 +110,7 @@ const Cards = () => {
               <div>
                 <a
                   class="block text-center rounded-xl bg-white md:p-2 sm:p-6"
-                  href=""
+                  href="https://eci.gov.in/statistical-report/statistical-reports/"
                 >
                   <lord-icon
                     src="https://cdn.lordicon.com/gqdnbnwt.json"
@@ -177,7 +177,7 @@ const Cards = () => {
               <div>
                 <a
                   class="block text-center rounded-xl bg-white md:p-2 sm:p-6"
-                  href=""
+                  href={"/digitalslip"}
                 >
                   <lord-icon
                     src="https://cdn.lordicon.com/fqrjldna.json"

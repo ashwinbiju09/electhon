@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Carbon\Carbon;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Blade;
 use Revolution\Google\Sheets\Facades\Sheets;
 
 class TestController extends Controller
@@ -132,5 +133,36 @@ class TestController extends Controller
 //            'peaks' => $peak_indexes,
 //            'average' => $average,
         ];
+    }
+
+    public function pdf()
+    {
+        $html = <<<'HTML'
+        <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DIGITAL BOOTH SLIP</title>
+</head>
+<body>
+	
+	<div class="resMainTop" style="padding-top: 110px; display:flex; align-items:center; justify-content: center;width: 75%">
+		<p class="allContentResMain" style="padding-top: 73px;width: 100%;text-align:center; margin-left: 20%;color:#000;font-size: 30px !important;font-family: 'Josefin Sans', sans-serif;font-weight: 400;line-height:38px;margin-top: 15%;">This is the digital booth slip of <br><u>{{ $participant_name }}</u><br>residing in {{ $team_name }}  <br>
+	    </p>
+	</div>
+	<img style="display: inline-block;height: 70px;width: 70px;float: right;margin-top: -2%;margin-right: 25px" src="data:image/png;base64, {!! base64_encode(QrCode::format('png')->size(100)->generate($certificate_url)) !!}" alt="image">
+</body>
+</html>
+HTML;
+
+        return \Barryvdh\Snappy\Facades\SnappyPdf::loadHTML(Blade::render($html, [
+            'participant_name' => "Bhuvanesh T G",
+            'team_name' => "H8791 Batz\n Divide Suite\n 153 North Edwardomouth,\n MS 73399-9107",
+            'certificate_url' => 'www.google.com'
+        ]))->setPaper('a4')
+            ->setOptions(['margin-top' => 0, 'margin-bottom' => 0, 'margin-left' => 0,'margin-right' => 0])
+            ->inline();
+
     }
 }

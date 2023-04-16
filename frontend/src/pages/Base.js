@@ -20,6 +20,7 @@ import InstitutionList from "../components/admin/list";
 import TimeSlot from "../components/slot/slot";
 import Poster from "./Poster";
 import Referral from "./Referral";
+import DigitalVoterSlip from "./GenerateVoterSlip";
 
 const Base = () => {
   return (
@@ -39,12 +40,14 @@ const Base = () => {
         <Route path="/election" element={<Election />} />
         <Route path="/campaign" element={<Campaign />} />
         <Route path="/success" element={<Success />} />
-        <Route path="/adminlog" element={<AdminLog />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/list" element={<InstitutionList />} />
         <Route path="/timeslot" element={<TimeSlot />} />
         <Route path="/poster" element={<Poster />} />
         <Route path="/referral" element={<Referral />} />
+        <Route path="/digitalslip" element={<DigitalVoterSlip />} />
+        <Route path="/admin/login" element={<AdminLog />} />
+        <Route path="/admin/dashboard" element={<Dashboard />} />
       </Routes>
     </div>
   );

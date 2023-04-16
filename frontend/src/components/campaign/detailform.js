@@ -1,12 +1,48 @@
 import React from "react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
+import { toast } from "react-toastify";
+import auth from "../../utils/auth";
+import axios from "../../utils/axios";
+import RouteHelper from "../../utils/routeHelper";
 
 const DetailForm = () => {
+  async function handleSubmit(e) {
+    e.preventDefault();
+
+    const data = new FormData(e.target);
+
+    toast.promise(axios().post("/campaign", data), {
+      pending: {
+        render() {
+          return "Submitting......";
+        },
+      },
+      success: {
+        render({ data }) {
+          RouteHelper.redirect("/success");
+          return "Submitted successfully";
+        },
+      },
+      error: {
+        render({ data }) {
+          let status = data.response.status;
+          data = data.response.data;
+
+          if (status === 422) {
+            return Object.values(data.errors)[0].toString();
+          } else {
+            return "Something went wrong!";
+          }
+        },
+      },
+    });
+  }
+
   return (
     <div>
       <Navbar />
-      <form class="mt-8 space-y-6">
+      <form class="mt-8 space-y-6" onSubmit={handleSubmit}>
         <div
           class="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8"
           style={{ "padding-top": "20px" }}
@@ -19,12 +55,7 @@ const DetailForm = () => {
               <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
                 Register your Institution
               </h2>
-              <p class="text-center text-sm text-gray-600 mt-5">
-                <a
-                  class="font-medium text-blue-600 hover:text-blue-500"
-                  href="/login"
-                ></a>
-              </p>
+              <p class="text-center text-sm text-gray-600 mt-5"></p>
             </div>
             <div class="-space-y-px">
               <div class="my-5">
@@ -33,12 +64,11 @@ const DetailForm = () => {
                 </label>
                 <input
                   id="voter-id"
-                  name="voterid"
+                  name="name"
                   type="string"
-                  required=""
+                  required={true}
                   class="rounded-md appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-smundefined"
                   placeholder="Name of the Institution"
-                  value=""
                 />
               </div>
             </div>
@@ -47,14 +77,12 @@ const DetailForm = () => {
                 <label for="voter-id" class="sr-only">
                   Address
                 </label>
-                <input
+                <textarea
                   id="voter-id"
-                  name="voterid"
-                  type="string"
-                  required=""
+                  name="address"
+                  required={true}
                   class="rounded-md appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-smundefined"
                   placeholder="Address"
-                  value=""
                 />
               </div>
             </div>
@@ -63,15 +91,16 @@ const DetailForm = () => {
                 <label for="voter-id" class="sr-only">
                   Institution
                 </label>
-                <input
+                <select
                   id="voter-id"
-                  name="voterid"
-                  type="string"
-                  required=""
+                  name="is_school"
+                  required={true}
                   class="rounded-md appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-smundefined"
-                  placeholder="School / College"
-                  value=""
-                />
+                >
+                  <option value={""}>Select School / College</option>
+                  <option value={1}>School</option>
+                  <option value={0}>College</option>
+                </select>
               </div>
             </div>
             <div class="-space-y-px">
@@ -81,12 +110,11 @@ const DetailForm = () => {
                 </label>
                 <input
                   id="voter-id"
-                  name="voterid"
-                  type="string"
-                  required=""
+                  name="email"
+                  type="email"
+                  required={true}
                   class="rounded-md appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-smundefined"
                   placeholder="Email"
-                  value=""
                 />
               </div>
             </div>
@@ -97,12 +125,11 @@ const DetailForm = () => {
                 </label>
                 <input
                   id="voter-id"
-                  name="voterid"
+                  name="phone"
                   type="string"
-                  required=""
+                  required={true}
                   class="rounded-md appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-smundefined"
                   placeholder="Mobile number"
-                  value=""
                 />
               </div>
             </div>
@@ -113,12 +140,11 @@ const DetailForm = () => {
                 </label>
                 <input
                   id="voter-id"
-                  name="voterid"
+                  name="google_sheets_url"
                   type="string"
-                  required=""
+                  required={true}
                   class="rounded-md appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-smundefined"
                   placeholder="Google sheet URL"
-                  value=""
                 />
               </div>
             </div>
@@ -127,12 +153,12 @@ const DetailForm = () => {
               Student name , Roll no, Date Of Birth , Aadhar number.
             </p>
             <div>
-              <a
-                href="/success"
+              <button
+                type={"submit"}
                 class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 mt-10"
               >
                 Submit
-              </a>
+              </button>
             </div>
           </div>
         </div>

@@ -38,10 +38,13 @@ export default function auth() {
     return axios().post("/verify", data);
   };
 
-  const setToken = async (data) => {
+  const setToken = async (data, redirect_route = "/", is_admin = false) => {
     await store(api_token_store_name(), data.token);
+    if (is_admin) {
+      await store("is_admin", 1);
+    }
 
-    RouteHelper.redirect("/");
+    RouteHelper.redirect(redirect_route);
   };
 
   const logout = async (redirectUrl = "/", token_expired = false) => {

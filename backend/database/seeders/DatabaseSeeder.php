@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Application;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Str;
@@ -23,5 +24,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
         User::factory(20)->create();
+
+        Application::factory(60)->create();
     }
 }
