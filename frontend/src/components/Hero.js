@@ -6,9 +6,9 @@ const Hero = () => {
     <div>
       <div class="mb-10">
         <div class="px-28 pt-6 bg-blue-800">
-          {/* <div>
+          <div class="-z-1 pointer-events-none">
             <Particle />
-          </div> */}
+          </div>
           <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center justify-between flex-end">
             <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
               <p class="text-3xl tracking-loose w-full italic text-gray-100 font-bold rounded-full tracking-wider">

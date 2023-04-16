@@ -2,6 +2,7 @@ import React from "react";
 import Landing from "./Landing";
 import CandidateInfo from "./CandidateInfo";
 import EVM from "./EVM";
+import EVM2 from "./EVM2";
 import Report from "./Report";
 import Login from "./Login";
 import { Route, Routes } from "react-router-dom";
@@ -23,6 +24,7 @@ const Base = () => {
         <Route path="/" element={<Landing />} />
         <Route path="candidateinfo" element={<CandidateInfo />} />
         <Route path="/simulation" element={<EVM />} />
+        <Route path="/output" element={<EVM2 />} />
         <Route path="/report" element={<Report />} />
         <Route path="/login" element={<Login />} />
         <Route path="/otp" element={<OTPPage />} />
